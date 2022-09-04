@@ -1,6 +1,8 @@
-#!/usr/bin/env python3
 import sys, argparse, struct, uuid, binascii, io, datetime
 import yaml
+
+
+__version__ = "0.0.0"
 
 
 def nicehex(x, L):
@@ -771,7 +773,3 @@ def run():
 
     print(yaml.dump(doc))
     return 0
-
-
-if __name__ == "__main__":
-    sys.exit(run())
